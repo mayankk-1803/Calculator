@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <script>
+            function add(m){
+            
+                a=parseFloat(m.t1.value);
+                b=parseFloat(m.t2.value);
+               
+                c=a+b
+                m.t3.value=c;
+                
+            }
+            
+            function sub(m){
+            
+                a=parseFloat(m.t1.value);
+                b=parseFloat(m.t2.value);
+           
+            c=a-b
+            m.t3.value=c;
+        }
+        
+        function mul(m){
+            
+            a=parseFloat(m.t1.value);
+                b=parseFloat(m.t2.value);
+           
+            c=a*b
+            m.t3.value=c;
+        }
+        
+        function div(m){
+            
+            a=parseFloat(m.t1.value);
+                b=parseFloat(m.t2.value);
+           
+            c=a/b
+            m.t3.value=c;
+        }
+        
+
+
+        </script>
+        <style>
+            div{
+                
+            border-color: black;
+            border-style: solid;
+            width: 400px;
+            height: 300px;
+            
+            border-radius: 10px;
+            background-color: coral;
+            margin-top: 150px;
+            margin-bottom: 200px;
+            margin-left: 520px;
+            margin-right: 200px;
+            transition: all 0.5s ease-in-out;
+            
+        }
+        .d:hover{
+            transform: scale(1.35);
+
+        }
+        .btn{
+            background-color: darkcyan;
+            margin: 5px;
+            padding: 3px;
+            width: 55px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 9px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.5s ease-in-out;
+            
+        }
+        .btn:hover{
+             background-color: aquamarine;
+             transform: scale(1.34);
+             
+        }
+        body{
+            transition: all 0.5s ease-in-out;
+        }
+        body:hover{
+            transform: scale(1.35);
+        }
+        html{
+            background: linear-gradient(to top left, rgba(255, 0, 0, 0.642),rgb(255, 98, 0));
+           
+        }
+        
+        
+        
+        
+        
+        
+        </style>
+    </head>
+    
+    <body >
+        <form id="f">
+            
+               <div>
+                <center>
+                    <h1>Calculator</h1>
+                No 1 :   <input type="number" id="t1">
+            
+                <br><br>
+                No 2  :  <input type="number" id="t2">
+            <br><br>
+            
+                Result:<input type="number" id="t3">
+            <br><br>
+            
+           
+                <button type="button" id="c1"  onclick="add(f)" class="btn" >+</button>
+            <button type="button" onclick="sub(f)" class="btn">-</button>
+            <button type="button" onclick="mul(f)" class="btn" >*</button>
+            <button type="button" onclick="div(f)" class="btn" >%</button>
+            <button type="reset" class="btn" >reset</button>
+                </center>
+               </div>
+                
+            
+        </form>
+        
+        
+    
+    </body>
+</html>
